@@ -9,7 +9,8 @@
     <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*,*">
         <Entry Text="{Binding FirstNumber}" Keyboard="Numeric" Placeholder="{x:Static m:Strings.FirstNumberPrompt }" Margin="5" HorizontalTextAlignment="Center"/>
         <Entry Text="{Binding SecondNumber}" Keyboard="Numeric" Grid.Column="1" Placeholder="{x:Static m:Strings.SecondNumberPrompt}" Margin="5" HorizontalTextAlignment="Center"/>
-        <Button Command="{Binding AddCommand}" Grid.Row="1" Text="{x:Static m:Strings.AddText}" Margin="5" Grid.ColumnSpan="2"/>
+        <Button Command="{Binding AddCommand}" Grid.Row="1" Grid.Column="0" Text="{x:Static m:Strings.AddText}" Margin="5" Grid.ColumnSpan="1"/>
+        <Button Command="{Binding AddCommand}" Grid.Row="1" Grid.Column="1" Text="{x:Static m:Strings.AddText}" Margin="5" Grid.ColumnSpan="1"/>
         <Label Grid.Row="2" Text="{Binding Result}" Grid.ColumnSpan="2" Margin="5" HorizontalTextAlignment="Center"/>
     </Grid>
 
